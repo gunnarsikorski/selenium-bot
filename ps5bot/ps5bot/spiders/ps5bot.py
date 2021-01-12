@@ -91,5 +91,5 @@ class BestbuySpider(scrapy.Spider):
 
        else:
            print("\nRetrying Bot In 10 Seconds.\n")
-           time.sleep(10)
+           time.sleep(8)
            yield Request(response.url, callback=self.parse, dont_filter=True)
